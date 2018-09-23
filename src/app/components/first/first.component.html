@@ -1,3 +1,8 @@
-<p>
-  first works!
-</p>
+<div *ngIf="isPageLoading" style="margin: 10px 10px 10px 2px">
+  <span style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:14px; font-weight:900">Loading Page1 ...&nbsp;</span>
+  <img style='vertical-align: middle' width="50" src="../../assets/images/spinner.gif">
+</div>
+
+<div *ngIf="!isPageLoading" class="alert alert-primary" role="alert">
+  Redirecting to page2 now
+</div>
